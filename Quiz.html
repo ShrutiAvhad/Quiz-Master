@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)file:///C:/Users/Owner/Quizapp.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+	<style>
+	body {
+      font-family: Arial, sans-serif;
+      text-align: left;
+	  background-color: #ccccff;
+	}
+	
+	h1 {
+	  color:  black;
+	  text-align: center;
+	  background-color: #e6e6ff;
+	  padding: 5px;
+	  font-size: 40px;
+	  border: 2px solid black;
+	  border-radius: 5px ;
+	}
+	
+	h2 {
+	  font-size: 30px;
+	}
+
+	#quiz-container, #result-container {
+      max-width: 600px;
+      margin: 50px auto;
+    }
+
+	li {
+	  font-size: 17px;
+	}
+	
+    #previous-button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 18px;
+	  border-radius: 5px;
+	  background-color: #e6e6ff;
+	  float: left;
+	  
+	}
+	
+	#next-button, #retry-button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 18px;
+	  border-radius: 5px;
+	  background-color: #e6e6ff;
+	  float: right
+	}
+	
+	#previous-button:hover {
+		background-color:  #8080ff ;
+		color: white;
+		box-shadow: 0px 1px 1.5px 1px gray ;
+	}
+	
+	#next-button:hover {
+		background-color:  #8080ff ;
+		color: white;
+		box-shadow: 0px 1px 1.5px 1px gray ;
+	}
+    
+	#retry-button:hover {
+		background-color:  #8080ff ;
+		color: white;
+		box-shadow: 0px 1px 1.5px 1px gray ;
+	}
+	
+
+	</style>
+</head>
+<body>
+	<header>
+	  <h1>Quiz !</h1>
+	</header>
+	
+    <div id="quiz-container">
+        <h2 id="question">1. What does HTML stand for? </h2>
+        <ul id="answers"><li>
+				<input type="radio" name="answer" id="a" value="a">
+				<label for="a">Hyper Text Markup Language</label>
+			</li><li>
+				<input type="radio" name="answer" id="b" value="b">
+				<label for="b">Home Tool Markup Language</label>
+			</li><li>
+				<input type="radio" name="answer" id="c" value="c">
+				<label for="c">Hyperlinks and Text Markup Language</label>
+			</li><li>
+				<input type="radio" name="answer" id="d" value="d">
+				<label for="d">Hyphun Make up Language</label>
+			</li></ul>
+		<button id="previous-button">Previous</button>
+        <button id="next-button">Next</button>
+    </div>
+    <div id="result-container" style="display:none;">
+        <h2 id="result"></h2>
+        <button id="retry-button">Retry</button>
+    </div>
+	
+    <script src="./Quiz_files/Quiz.js.download"></script>
+
+
+</body></html>
